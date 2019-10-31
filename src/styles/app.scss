@@ -1,0 +1,119 @@
+@import "./scss/_variables.scss";
+
+.application {
+  //background-image: url("/images/bg_main.png") !important;
+  //background-repeat: repeat !important;
+}
+.v-content--wrap {
+  height: 100% !important;
+  /* max-height: calc(100% - 132px) !important; */
+}
+.v-toolbar {
+  z-index: 100;
+  height: 132px;
+}
+.v-toolbar__title, .v-toolbar__content {
+  margin-left: 20px;
+}
+.v-toolbar__content {
+  height: 132px;
+}
+.v-toolbar__title img {
+  height: 130px;
+  width: 320px;
+  margin: 74px 0 0 0;
+}
+.v-btn {
+  text-transform: none;
+}
+.theme--light.v-btn {
+  color: $cl_btn_text;
+}
+.v-snack {
+  font-size: 15px;
+  font-weight: 300;
+}
+.v-snack__wrapper {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  background-color: #444444;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.v-snack--multi-line .v-snack__content {
+  height: 80px;
+  padding: 24px 90px 24px 24px;
+}
+.v-dialog__content {
+  z-index: 999 !important;
+}
+
+.v-expansion-panel {
+  margin-bottom: 12px !important;
+}
+.v-expansion-panel__header {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: $cl_panel_header;
+}
+.v-expansion-panel__header__icon {
+  padding-right: 10px;
+}
+#cl-main-toolbar {
+  height: 90px;
+  background-image: url("/images/bg_header.png");
+  background-repeat: repeat-x;
+  z-index: 900;
+  cursor: pointer;
+  flex: 0 1 auto;
+}
+.cl-module__content {
+  padding: 20px 0 0 80px;
+}
+.cl-content-circle {
+  width: 360px !important;
+  height: 360px !important;
+  border-radius: 360px !important;
+  background-color: white !important;
+  text-align: center !important;
+}
+.cl-content {
+  background-repeat: repeat;
+  height: 100vh;
+}
+.cl-content-mobile {
+  background-repeat: repeat;
+  height: 100%;
+  padding-top: 30px;
+}
+.fc-state-default, .fc-state-active {
+  border: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+.VueCarousel-navigation-button {
+  font-size: 60px !important;
+  font-weight: 300 !important;
+  padding: 5px !important;
+  color: $cl_btn_nav !important;
+  margin: -35px 15px 0 15px !important;
+}
+.VueCarousel-pagination {
+  display: block !important;
+  max-height: 40px !important;
+}
+.VueCarousel-dot-container li.VueCarousel-dot--active .VueCarousel-dot-button {
+  background-color: $cl_yellow !important;
+}
+.cl-list_container .v-expansion-panel__header, .cl-list_container .v-card__title {
+  background-color: $cl_container_title_bg !important;
+  color: $cl_container_title_text !important;
+}F
+ .cl-list_container .v-expansion-panel__header {
+   border-bottom: 1px solid $cl_panel_header;
+ }
+#cl-task .v-tabs__container {
+  margin: 0 0 20px 0 !important;
+}

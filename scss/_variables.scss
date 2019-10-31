@@ -1,0 +1,32 @@
+/* claroo primary colors */
+$cl_blue: #15479c;
+$cl_green: #06c290;
+$cl_yellow: #fba957;
+$cl_red: #a13a47;
+
+/* basic colors */
+$cl_btn_text: #727272;
+$cl_btn_nav: #8f8f8f;
+$cl_panel_header: #c4c4c4;
+$cl_container_title_bg: #dedede;
+$cl_container_title_text: #666666;
+$cl_border_dark: #666666;
+
+/* task colors */
+
+
+.cl-yellow {
+  color: $cl_yellow;
+}
+.cl-red {
+  color: $cl_red;
+}
+.cl-green {
+  color: $cl_green;
+}
+.cl-blue {
+  color: $cl_blue;
+}
+
+
+
