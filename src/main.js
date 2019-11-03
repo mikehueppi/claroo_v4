@@ -1,7 +1,7 @@
 import Vue from 'vue'
 //import Vuex from 'vuex'
 import vuetify from './plugins/vuetify';
-//import router from './router';
+import router from './router';
 //import store from './store/store';
 //import VeeValidate from 'vee-validate';
 import App from './App.vue'
@@ -13,6 +13,6 @@ new Vue({
     vuetify,
     //Vuex,
     //store,
-    //router,
+    router,
     render: h => h(App)
 }).$mount('#app');

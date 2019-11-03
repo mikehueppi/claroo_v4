@@ -1,9 +1,5 @@
 @import "./scss/_variables.scss";
 
-.application {
-  //background-image: url("/images/bg_main.png") !important;
-  //background-repeat: repeat !important;
-}
 .v-content--wrap {
   height: 100% !important;
   /* max-height: calc(100% - 132px) !important; */
@@ -21,7 +17,7 @@
 .v-toolbar__title img {
   height: 130px;
   width: 320px;
-  margin: 74px 0 0 0;
+  margin: 8px 0 0 0;
 }
 .v-btn {
   text-transform: none;
@@ -61,12 +57,17 @@
   padding-right: 10px;
 }
 #cl-main-toolbar {
-  height: 90px;
-  background-image: url("/images/bg_header.png");
+  /* background-image: url("/images/bg_header.png"); */
+  background-color: $cl_lightgrey;
   background-repeat: repeat-x;
   z-index: 900;
-  cursor: pointer;
   flex: 0 1 auto;
+  position: fixed;
+  width: 100%;
+}
+#cl-main-toolbar img {
+  width: 261px;
+  height: 44px;
 }
 .cl-module__content {
   padding: 20px 0 0 80px;
