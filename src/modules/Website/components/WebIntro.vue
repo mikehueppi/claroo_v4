@@ -31,6 +31,7 @@
         bottom: 0;
         min-width: 100%;
         min-height: 100%;
+        display: none;
     }
     #introImage {
         position: absolute;
@@ -39,5 +40,6 @@
         z-index: 20;
         bottom: 0;
         background-size: cover;
+        display: none;
     }
 </style>
