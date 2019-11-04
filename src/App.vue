@@ -2,7 +2,7 @@
   <v-app>
     <AppHeader/>
     <v-content>
-      <!--<router-view/>-->
+      <router-view/>
       <AppPrivacyStatementBar/>
     </v-content>
   </v-app>
