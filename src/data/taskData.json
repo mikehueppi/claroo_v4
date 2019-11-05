@@ -1,0 +1,31 @@
+{
+  "taskData" : [
+    { "taskDataID" : 1,
+      "taskDataParentID" : 1,
+      "taskDataStudentID" : 1,
+      "taskDataParts" : [
+        { "taskDataPartContent" : "", "taskDataPartFiles" : [] },
+        { "taskDataPartContent" : "", "taskDataPartFiles" : [] },
+        { "taskDataPartContent" : "", "taskDataPartFiles" : [] },
+        { "taskDataPartContent" : "", "taskDataPartFiles" : [] }
+      ],
+      "taskDataStatus" : 3,
+      "taskDataDate" : "xxx"
+    },
+    { "taskDataID" : 2,
+      "taskDataParentID" : 2,
+      "taskDataStudentID" : 1,
+      "taskDataParts" : [
+        { "taskDataPartContent" : "", "taskDataPartFiles" : [] },
+        { "taskDataPartContent" : "", "taskDataPartFiles" : [] },
+        { "taskDataPartContent" : "", "taskDataPartFiles" : [] },
+        { "taskDataPartContent" : "", "taskDataPartFiles" : [] },
+        { "taskDataPartContent" : "", "taskDataPartFiles" : [] },
+        { "taskDataPartContent" : "", "taskDataPartFiles" : [] }
+      ],
+      "taskDataStatus" : 1,
+      "taskDataDate" : "xxx"
+    }
+  ]
+}
+

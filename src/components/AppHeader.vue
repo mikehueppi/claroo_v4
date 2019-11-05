@@ -6,13 +6,15 @@
         </span>
         </v-toolbar-title>
         <v-spacer></v-spacer>
-        <cl-login></cl-login>
+        <AppLogin/>
     </v-toolbar>
 </template>
 
 <script>
+    import AppLogin from '../components/AppLogin.vue'
     export default {
-        name: "AppHeader"
+        name: "AppHeader",
+        components: {AppLogin},
     }
 </script>
 
