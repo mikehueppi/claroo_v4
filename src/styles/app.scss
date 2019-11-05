@@ -1,4 +1,4 @@
-@import "./scss/_variables.scss";
+@import "../../scss/_variables.scss";
 
 .v-content--wrap {
   height: 100% !important;
@@ -70,6 +70,7 @@
   height: 44px;
 }
 .cl-module__content {
+  margin: 72px 8px 8px 40px;
   padding: 20px 0 0 80px;
 }
 .cl-content-circle {
@@ -111,7 +112,7 @@
 .cl-list_container .v-expansion-panel__header, .cl-list_container .v-card__title {
   background-color: $cl_container_title_bg !important;
   color: $cl_container_title_text !important;
-}F
+}
  .cl-list_container .v-expansion-panel__header {
    border-bottom: 1px solid $cl_panel_header;
  }

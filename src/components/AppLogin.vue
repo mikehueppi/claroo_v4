@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="cl-btn-login">
-            <v-btn v-if="this.$store.state.logged === 1" flat @click.stop="logOff" style="text-align:center;">Logoff</v-btn>
-            <v-btn v-else  flat @click.stop="dialog = true" style="text-align:center;">Login</v-btn>
+            <v-btn v-if="this.$store.state.logged === 1" text @click.stop="logOff" style="text-align:center;">Logoff</v-btn>
+            <v-btn v-else text @click.stop="dialog = true" style="text-align:center;">Login</v-btn>
         </div>
         <v-dialog v-model="dialog" persistent max-width="360px" content-class="cl-content-circle" id="login-dialog">
             <div class="content-circle login">
@@ -20,7 +20,7 @@
                             required
                     ></v-text-field>
                     <v-btn @click.stop="goDashboard" class="cl-btn-standard cl-login">Login</v-btn><br />
-                    <v-btn flat @click.stop="dialog = false" class="cl-btn-standard">Close</v-btn>
+                    <v-btn text @click.stop="dialog = false" class="cl-btn-standard">Close</v-btn>
                 </v-form>
             </div>
         </v-dialog>
@@ -65,6 +65,7 @@
         color: $cl_btn_nav;
     }
     .cl-login {
+        padding: 10px;
         font-size: 16px !important;
     }
     .cl-btn-login {
