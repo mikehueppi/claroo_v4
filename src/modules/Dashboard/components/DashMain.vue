@@ -4,6 +4,10 @@
             <v-row no-gutters>
                 <v-col md="6">
                     <DashWidgetMessages :messages=messages />
+                    <DashWidgetEducationMaterial />
+                </v-col>
+                <v-col md="6">
+                    <DashWidgetCalendar />
                 </v-col>
             </v-row>
         </v-container>
@@ -12,9 +16,11 @@
 
 <script>
     import DashWidgetMessages from './DashWidgetMessages.vue';
+    import DashWidgetEducationMaterial from './DashWidgetEducationMaterial.vue';
+    import DashWidgetCalendar from './DashWidgetCalendar.vue';
     export default {
         name: "DashMain.vue",
-        components: { DashWidgetMessages },
+        components: { DashWidgetMessages, DashWidgetEducationMaterial, DashWidgetCalendar },
         data() {
             return {
                 messages: [],
