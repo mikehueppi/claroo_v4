@@ -44,6 +44,9 @@
 </script>
 
 <style scoped>
+    .v-card {
+        margin: 0 15px 30px 15px;
+    }
     .v-card__title {
         color: #ffffff;
         background-color: #c4c4c4;

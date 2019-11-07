@@ -106,7 +106,7 @@
   display: block !important;
   max-height: 40px !important;
 }
-.VueCarousel-dot-container li.VueCarousel-dot--active .VueCarousel-dot-button {
+.VueCarousel-dot-container button.VueCarousel-dot--active {
   background-color: $cl_yellow !important;
 }
 .cl-list_container .v-expansion-panel__header, .cl-list_container .v-card__title {
