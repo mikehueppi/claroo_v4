@@ -3,6 +3,7 @@ $cl_blue: #15479c;
 $cl_green: #06c290;
 $cl_yellow: #fba957;
 $cl_red: #a13a47;
+$cl_grey: #c4c4c4;
 $cl_lightgrey: #dedede;
 
 /* basic colors */
@@ -27,6 +28,9 @@ $cl_border_dark: #666666;
 }
 .cl-blue {
   color: $cl_blue;
+}
+.cl-grey {
+  color: $cl_grey;
 }
 
 
