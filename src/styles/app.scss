@@ -1,5 +1,17 @@
 @import "../../scss/_variables.scss";
 
+html, body {
+  height: inherit;
+  margin: 0;
+}
+
+.v-application {
+  background: #efefef !important;
+}
+.v-card p {
+  color: #333333;
+  font-size: 16px;
+}
 .v-content--wrap {
   height: 100% !important;
   /* max-height: calc(100% - 132px) !important; */
@@ -9,7 +21,7 @@
   height: 132px;
 }
 .v-toolbar__title, .v-toolbar__content {
-  margin-left: 20px;
+  margin-left: 5px;
 }
 .v-toolbar__content {
   height: 132px;
@@ -66,11 +78,16 @@
   width: 100%;
 }
 #cl-main-toolbar img {
-  width: 261px;
-  height: 44px;
+  width: 214px;
+  height: 36px;
+}
+.cl-subheader .v-toolbar__content {
+  background-color: #efefef !important;
+  color: #444444 !important;
+  margin: 4px !important;
 }
 .cl-module__content {
-  margin: 72px 8px 8px 40px;
+  margin: 72px 8px 8px 15px;
   padding: 20px 0 0 80px;
 }
 .cl-content-circle {
@@ -96,18 +113,52 @@
   background-image: none !important;
 }
 .VueCarousel-navigation-button {
-  font-size: 60px !important;
-  font-weight: 300 !important;
-  padding: 5px !important;
+  margin: 0 35px 0 35px;
+  font-size: 20px;
+  font-weight: 100;
+  justify-content: center;
+  border-radius: 50%;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: inherit !important;
+  bottom: 0 !important;
+  background-color: #dedede !important;
   color: $cl_btn_nav !important;
-  margin: -35px 15px 0 15px !important;
+  opacity: 0.7 !important;
 }
-.VueCarousel-pagination {
-  display: block !important;
-  max-height: 40px !important;
+.VueCarousel-navigation-prev {
+  padding: 0 5px 0 0 !important;
+}
+.VueCarousel-navigation-next {
+  padding: 0  0 0 5px !important;
+}
+.VueCarousel-navigation--disabled {
+  opacity: 0.2 !important;
+}
+.VueCarousel-dot-container {
+  margin-top: 0 !important;
 }
 .VueCarousel-dot-container button.VueCarousel-dot--active {
   background-color: $cl_yellow !important;
+}
+.cl-carousel img {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  width: 80%;
+  margin: 5px 10px 5px 10px;
+  border: 6px solid #fba957;
+  max-width: 120px;
+  cursor: pointer;
+}
+.cl-carousel .cl-label {
+  color: #333333 !important;
+}
+
+.VueCarousel-pagination {
+  display: block !important;
+  max-height: 40px !important;
 }
 .cl-list_container .v-expansion-panel__header, .cl-list_container .v-card__title {
   background-color: $cl_container_title_bg !important;

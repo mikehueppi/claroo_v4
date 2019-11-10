@@ -1,30 +1,37 @@
 <template>
     <div>
-        <div class="cl-btn-login">
-            <v-btn v-if="this.$store.state.logged === 1" text @click.stop="logOff" style="text-align:center;">Logoff</v-btn>
-            <v-btn v-else text @click.stop="dialog = true" style="text-align:center;">Login</v-btn>
-        </div>
-        <v-dialog v-model="dialog" persistent max-width="360px" content-class="cl-content-circle" id="login-dialog">
-            <div class="content-circle login">
-                <v-form>
-                    <v-text-field
-                            v-model="username"
-                            label="User"
-                            required
-                    ></v-text-field>
-                    <v-text-field
-                            @keyup.enter.native="goDashboard"
-                            v-model="password"
-                            :type="'password'"
-                            label="Passwort"
-                            required
-                    ></v-text-field>
-                    <v-btn @click.stop="goDashboard" class="cl-btn-standard cl-login">Login</v-btn><br />
-                    <v-btn text @click.stop="dialog = false" class="cl-btn-standard">Close</v-btn>
-                </v-form>
+        <v-container>
+            <!--<v-btn v-if="this.$store.state.logged === 1" text @click.stop="logOff" style="text-align:center;">Logoff</v-btn>-->
+            <v-row no-gutters v-if="this.$store.state.logged === 1" class="userNav">
+                <v-col cols="10" class="userNavLabel">Nick</v-col>
+                <v-col cols="2" class="userNavAvatar">
+                    <img v-on="on" alt="User Avatar" src="/images/users/demouser_student.png" @click.stop="logOff">
+                </v-col>
+            </v-row>
+            <div  v-else class="cl-btn-login">
+                <v-btn text @click.stop="dialog = true" style="text-align:center;">Login</v-btn>
             </div>
-        </v-dialog>
-
+            <v-dialog v-model="dialog" persistent max-width="360px" content-class="cl-content-circle" id="login-dialog">
+                <div class="content-circle login">
+                    <v-form>
+                        <v-text-field
+                                v-model="username"
+                                label="User"
+                                required
+                        ></v-text-field>
+                        <v-text-field
+                                @keyup.enter.native="goDashboard"
+                                v-model="password"
+                                :type="'password'"
+                                label="Passwort"
+                                required
+                        ></v-text-field>
+                        <v-btn @click.stop="goDashboard" class="cl-btn-standard cl-login">Login</v-btn><br />
+                        <v-btn text @click.stop="dialog = false" class="cl-btn-standard">Schliessen</v-btn>
+                    </v-form>
+                </div>
+            </v-dialog>
+        </v-container>
     </div>
 </template>
 
@@ -36,12 +43,16 @@
                 dialog: false,
                 loggedIn: false,
                 username: "",
-                password: ""
+                password: "",
+                navItems: [
+                    { title: 'Click Me' },
+                    { title: 'Click Me 2' },
+                ],
             }
         },
         methods: {
             goDashboard() {
-                if (this.username === "Demo" && this.password === "claroo19") {
+                if (this.username === "demo" && this.password === "123") {
                     this.dialog = false;
                     this.loggedIn = true;
                     this.$store.commit('setLogged',1);
@@ -60,6 +71,25 @@
 
 <style scoped lang="scss">
     @import "../../scss/_variables.scss";
+    .userNavAvatar img {
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border: 2px solid #fba957;
+        cursor: pointer;
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .userNavAvatar {
+        padding: 6px 0 0 0;
+    }
+    .userNav {
+        width: 300px;
+    }
+    .userNavLabel {
+        text-align: right;
+        padding: 20px 15px 0 0;
+    }
     .login {
         font-size: 16px;
         color: $cl_btn_nav;

@@ -1,10 +1,14 @@
 <template>
     <div>
         <div v-for="(module, index) in modules" :key="module">
-            <router-link :to="links[index]">
+            <router-link v-if="active[index]" :to="links[index]">
                 <img v-if="index == moduleActive" :src="'/images/' + icons[index] + '_col.svg'" />
                 <img v-else :src="'/images/' + icons[index] + '.svg'" />
             </router-link>
+            <div v-else>
+                <img v-if="index == moduleActive" :src="'/images/' + icons[index] + '_col.svg'" />
+                <img v-else :src="'/images/' + icons[index] + '.svg'" />
+            </div>
         </div>
     </div>
 </template>
@@ -17,7 +21,8 @@
             return {
                 modules: ['dash', 'topics', 'tasks'],
                 links: ['/Dashboard', '/Topics', '/Tasks'],
-                icons: ['icon_dashboard', 'icon_topics', 'icon_tasks']
+                icons: ['icon_dashboard', 'icon_topics', 'icon_tasks'],
+                active: [ true, false, false ]
             }
         }
     }

@@ -5,7 +5,7 @@
             cardIconColor="#a13a47"
     >
         <div>
-            Aufgaben / Projekte
+            <p>Das Module «Aufgaben / Projekte» ist in der Demoversion noch nicht verfügbar.</p>
         </div>
     </BaseCard>
 </template>

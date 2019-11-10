@@ -17,10 +17,6 @@
 <script>
     export default {
         name: "BaseCard.vue",
-        data () {
-            return {
-            }
-        },
         props: {
             cardTitle: {
                 type: String,

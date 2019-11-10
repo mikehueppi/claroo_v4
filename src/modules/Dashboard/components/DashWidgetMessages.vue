@@ -40,6 +40,9 @@
 </script>
 
 <style scoped>
+    .v-card {
+        font-size: 36px;
+    }
     .cl-message {
         padding: 10px 15px 0 15px;
         background-color: #efefef;

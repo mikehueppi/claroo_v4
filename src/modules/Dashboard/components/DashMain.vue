@@ -2,12 +2,12 @@
     <div class="cl-module__content">
         <v-container fluid class="content-body">
             <v-row no-gutters>
-                <v-col md="6">
+                <v-col cols="12" md="6">
                     <DashWidgetMessages :messages=messages />
-                    <DashWidgetEducationMaterial />
+                    <DashWidgetEducationMaterial :apps=apps  />
                     <DashWidgetTasks />
                 </v-col>
-                <v-col md="6">
+                <v-col cols="12" md="6">
                     <DashWidgetCalendar />
                     <DashWidgetUsers  :users=users />
                 </v-col>
@@ -30,15 +30,18 @@
                 messages: [],
                 tasks: [],
                 events: [],
+                apps: [],
             }
         },
         created() {
             let userObj = JSON.parse(localStorage.getItem('storeUserObj'));
             let messObj = JSON.parse(localStorage.getItem('storeMessObj'));
             let taskObj = JSON.parse(localStorage.getItem('storeTaskObj'));
+            let eduObj = JSON.parse(localStorage.getItem('storeEduObj'));
             this.users = userObj.users;
             this.messages = messObj.messages;
             this.tasks = taskObj.tasks;
+            this.apps = eduObj.apps;
         }
     }
 </script>

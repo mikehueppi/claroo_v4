@@ -1,8 +1,8 @@
 <template>
-    <carousel :perPage="3" :navigationEnabled="true">
+    <carousel :perPage="4" :navigationEnabled="true">
         <slide v-for="item in items" :key="item.id">
-                <div @click="onClickSlide(item.id)">klick</div>
-                <div class="cl-label">{{ item.label }}</div>
+            <img :src="item.image" @click="onClickSlide(item.id)">
+            <div class="cl-label">{{ item.label }}</div>
         </slide>
     </carousel>
 </template>
