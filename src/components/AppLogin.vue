@@ -84,7 +84,8 @@
         padding: 6px 0 0 0;
     }
     .userNav {
-        width: 300px;
+        width: 200px;
+        padding: 0 10px 0 0;
     }
     .userNavLabel {
         text-align: right;

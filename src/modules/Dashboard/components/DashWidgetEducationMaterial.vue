@@ -16,7 +16,6 @@
                             :id=app.appID
                             :label=app.appLabel
                             width=90
-                            height=90
                             imagePath="/images/apps/"
                             showLabel=false
                             link="Apps"></Icon>

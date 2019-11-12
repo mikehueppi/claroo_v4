@@ -3,7 +3,6 @@
         <router-link :to="{ name: link, params: { id: id }}" v-if="link">
             <v-img
                     :width="width"
-                    :height="height"
                     :src="imagePath + image"
             >
             </v-img>
@@ -12,7 +11,6 @@
             <v-img
                     @click="onClickIcon(id)"
                     :width="width"
-                    :height="height"
                     :src="imagePath + image"
             >
             </v-img>
